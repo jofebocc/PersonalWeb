@@ -4,10 +4,30 @@
   box-sizing: border-box;
 }
 
+/* Filename - App.css */
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  background-color: #9a9a9a;
+  margin: 0;
+  /* Reset browser default margins */
+  padding-top: 60px;
+  /* Account for the fixed navbar height */
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
+  width: 100%;
+}
+
+.mainOther {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  margin-top: 50px;
+  width: 100%;
 }
 
 h1 {
@@ -19,25 +39,9 @@ h2 {
   text-align: center;
 }
 
-.content p {
-  border: 2px solid #000;
-  /* Centers the box horizontally and adds spacing */
-  /* Reduces inner spacing */
-  padding: 0.5rem;
-  /* Limits the width of the box */
-  width: 0 auto;
-  /* Ensures it doesn’t grow too large */
-  max-width: 400px;
-  /* Centers the text inside the box */
-}
-
-.content {
-  text-align: center;
-}
-
 .linkcontent {
   text-align: center;
-  padding-left: 80px;
+  padding-left: 200px;
 }
 
 .links ul {
@@ -62,15 +66,21 @@ h2 {
 
 .links li a:hover {
   background-color: #555;
+  color: white;
 }
 
-/* Filename - App.css */
+.content p {
+  border: 2px solid #000;
+  /* Centers the box horizontally and adds spacing */
+  /* Reduces inner spacing */
+  padding: 0.5rem;
+  /* Limits the width of the box */
+  width: 0 auto;
+  /* Ensures it doesn’t grow too large */
+  max-width: 600px;
+  /* Centers the text inside the box */
+}
 
-body {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #9a9a9a;
-  margin: 0;
-  /* Reset browser default margins */
-  padding-top: 60px;
-  /* Account for the fixed navbar height */
+.content {
+  text-align: center;
 }
