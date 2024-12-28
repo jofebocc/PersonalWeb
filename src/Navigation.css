@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* Import futuristic font */
+
+
+.header ul {
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 1000;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: grey;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.header li {
+  float: left;
+}
+
+.header li:first-child {
+  float: left;
+}
+
+.header li:not(:first-child) {
+  float: right;
+}
+
+.header li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+}
+
+.header li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.header .active {
+  background-color: #000;
+  color: white;
+}
+
+.titulo {
+  margin-left: 15px;
+  font-family: 'Orbitron', sans-serif;
+  /* Futuristic font */
+  font-size: 2em;
+  /* Adjust size as needed */
+  color: #00f0ff;
+  /* Initial text color */
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+  /* Smooth transition */
+}
+
+.titulo:hover {
+  color: #00e6e6;
+  /* Optional: Slightly change color on hover */
+  text-shadow:
+    0 0 5px #00f0ff,
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00e6e6,
+    0 0 80px #00e6e6;
+  /* Glowing effect */
+}
+
+.header a .icon {
+  width: 19px;
+  /* Adjust size as needed */
+  height: 16px;
+  margin-right: 1px;
+  /* Space between the icon and text */
+  vertical-align: middle;
+  /* Aligns the image with the text */
+}
